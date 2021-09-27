@@ -6,13 +6,12 @@ public class Tank implements TradableDrivable{
     /**
      * Construct a Tank.
      *
-     * @param colour Colour of the tank.
+     * @param price Price of the tank.
      *
      */
     public Tank(int price){
-        this.colour = colour;
         this.price = price;
-        this.speed = 0
+        this.speed = 0;
     }
 
     /**
@@ -22,20 +21,23 @@ public class Tank implements TradableDrivable{
         return price;
     }
 
+    @Override
     /**
      * Increase the maximum speed of this Vehicle.
      **/
     public void upgradeSpeed(){speed++;}
 
+    @Override
     /**
      * Decrease the maximum speed of this Vehicle.
      **/
     public void downgradeSpeed(){speed--;}
 
+    @Override
     /**
      * Return the maximum speed of this Vehicle.
      *
-     * @return    The current maximum speed of this Vehicle.
+     * @return    A tank.
      **/
-    int getMaxSpeed(){return this.speed};
+    public int getMaxSpeed(){return this.speed;}
 }
