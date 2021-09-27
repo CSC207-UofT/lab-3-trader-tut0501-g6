@@ -9,7 +9,7 @@ class TankTest {
         t = new Tank(100000);
     }
 
-    @Test(timeout = 50)
+    @Test(timeout = 10)
     public void TestPrice() {
         assertEquals(100000, t.getPrice());
     }
