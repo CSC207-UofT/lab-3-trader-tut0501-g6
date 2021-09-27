@@ -15,9 +15,9 @@ public class Dragon implements Domesticatable, Drivable, Tradable {
     @Override
     public String sound() {
         if (this.element.equals("Ice")){
-            return "FIRE BALL!!!!!!!!";
-        }else {
             return "ICE BALL!!!!!!!!!";
+        }else {
+            return "FIRE BALL!!!!!!!!!";
         }
 
     }
@@ -39,6 +39,6 @@ public class Dragon implements Domesticatable, Drivable, Tradable {
 
     @Override
     public int getPrice() {
-        return 0;
+        return this.price;
     }
 }
